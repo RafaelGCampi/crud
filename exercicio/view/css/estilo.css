@@ -1,0 +1,19 @@
+
+	table, th, td {
+  border: 1px solid black;
+}	
+.tabela {
+    border: 1px solid red;
+    width: 50% !important; /*Importante manter o !important rs */
+    margin: auto;
+
+}
+form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	display: inline-block;
+    width: 90px;
+}
