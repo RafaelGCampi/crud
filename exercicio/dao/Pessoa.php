@@ -1,18 +1,18 @@
 <?php
  
 class Pessoa {
-	public$nome;
+	public $nome;
 	public $email;
 	public $telefone;
 	public $endereco;
 	public $dataNasc;
-	 public function __construct($nome, $email, $telefone, $endereco, $dataNasc) {
+	 public function __construct( $nome, $email, $telefone, $endereco, $dataNasc) {
 	 	require_once ('PessoaDAO.php');
-    $this->$nome = $nome;
-    $this->$email = $email;
-    $this->$telefone = $telefone;
-    $this->$endereco = $endereco;    
-    $this->$dataNasc = $dataNasc;
+    	$this->$nome = $nome;
+    	$this->$email = $email;
+    	$this->$telefone = $telefone;
+    	$this->$endereco = $endereco;    
+    	$this->$dataNasc = $dataNasc;
   	}
   	
   	public function __set($atrib, $value){
@@ -37,5 +37,15 @@ class Pessoa {
 		return $lista;
 	}
 
-	
+	public function alterar($idCliente, $nome, $email, $telefone, $endereco, $data){
+		$pessoaDao = new PessoaDAO();
+		$pessoaDao->alterar($idCliente, $nome, $email, $telefone, $endereco, $data);
+	}
+
+	public function excluir ($idPessoa){
+		require_once ('PessoaDAO.php');
+		$pessoaDao = new PessoDAO();
+		$pessoaDao->excluir($idPessoa);
+	}	
+
 }

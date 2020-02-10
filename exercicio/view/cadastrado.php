@@ -14,7 +14,7 @@
 <title>Lista</title>
 </head>
 <body>
-<!-- O TEU CÓDIGO PHP-->
+
 
 <?php
  	require_once '../dao/Pessoa.php';
@@ -24,12 +24,12 @@
 	$telefone = $_POST['telefone']; 
 	$endereco = $_POST['endereco'];
 	$dataNasc = $_POST['data_nasc'];
-	$pessoa = new Pessoa($nome, $email, $telefone, $endereco, $dataNasc);
+	$pessoa = new Pessoa( $nome, $email, $telefone, $endereco, $dataNasc);
 	$pessoa->inserir($nome, $email, $telefone, $endereco, $dataNasc);	
 	$lista = $pessoa->listaPessoas();
 	
 ?>
-<!-- O TEU CÓDIGO PHP-->
+
 	
 
 </body>

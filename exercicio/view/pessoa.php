@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css"  />
 </head>
 <body>
-<!-- O TEU CÓDIGO PHP-->
+	
 <form class ="formulario"action ="cadastrado.php" method="POST">
 	Nome: <input name="nome" type="text"/> <br/>
 	Email: <input name="email" type="text"/> <br/>
@@ -20,7 +20,7 @@
 <?php
 
 ?>
-<!-- O TEU CÓDIGO PHP-->
+
 </body>
 </html>
 
